@@ -2,6 +2,9 @@ import React from 'react';
 import OpenWeatherMap from '../../utils/OpenWeatherMap/OpenWeatherMap';
 import styles from './Current.module.css';
 import VerticalDivider from '../VerticalDivider';
+import Temperature from '../Temperature';
+import Meta from './components/Meta';
+import Text from './components/Text';
 
 const BRISBANE_CITY = '2174003';
 
@@ -43,7 +46,7 @@ class Current extends React.Component {
       <div className={styles.current}>
         <div className={styles.left}>
           <div className={styles.temperature}>
-            {data.main.temp}
+            <Temperature>{data.main.temp}</Temperature>
           </div>
 
           <div className={styles.weather}>
