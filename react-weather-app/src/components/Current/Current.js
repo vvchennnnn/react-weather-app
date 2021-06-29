@@ -55,11 +55,11 @@ class Current extends React.Component {
 
           <div className={styles.metas}>
             <div className={styles.humidity}>
-              HUMIDITY <br /> {data.main.humidity}%
+              <Meta title="HUMIDITY" value={`${data.main.humidity}%`} />
             </div>
             <VerticalDivider width="2px" color="rgba(255, 255, 255, 0.7)" />
             <div className={styles.wind}>
-              WIND <br /> {data.wind.speed}K/M
+              <Meta title="WIND" value={`${data.wind.speed} KM/H`} />
             </div>
           </div>
 
