@@ -57,7 +57,7 @@ class OtherCities extends React.Component {
           <City
             key = {id}
             name = {name}
-            temperature = {temp}
+            temperature = {Math.round(temp)}
             weather = {{description: main, icon}}
             />
             )}
