@@ -13,9 +13,9 @@ function App() {
           <Current />
         </div>
         <div className={styles.bottom}>
-          <Forecast />
-          <VerticalDivider color="rgba(0, 0, 0, 0.1)" width="3px"/>
           <OtherCities />
+          <VerticalDivider color="rgba(0, 0, 0, 0.1)" width="3px"/>
+          <Forecast />
         </div>
       </div>
     </div>
