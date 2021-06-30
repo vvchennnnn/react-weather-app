@@ -52,10 +52,16 @@ class OtherCities extends React.Component {
     return (
       <div className={styles.otherCities}>
         <h2 className={styles.header}>Other Cities</h2>
-
-        <div>{data.list[0].name}</div>
-        <div>{data.list[1].name}</div>
-        <div>{data.list[2].name}</div>      
+        <div>
+        {data.list.map(({id, name, main: {temp}, weather: [{main, icon}]}) => 
+          <City
+            key = {id}
+            name = {name}
+            temperature = {temp}
+            weather = {{description: main, icon}}
+            />
+            )}
+        </div>
       </div>
     )
   }
