@@ -11,12 +11,15 @@
 }
 
 .temperature {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
+}
+
+.icon {
+  width: 70px;
 }
 
 .description {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.5);
-  font-weight: bold;
 }
