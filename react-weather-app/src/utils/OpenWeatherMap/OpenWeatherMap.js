@@ -8,7 +8,7 @@ const OpenWeatherMap = axios.create({
   baseURL,
   params: {
     units,
-    appid,
+    appid
   }
 })
 

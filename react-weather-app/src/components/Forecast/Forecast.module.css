@@ -1,7 +1,22 @@
 .forecast {
   display: flex;
-  padding: 0 96px;
+  flex-direction: column;
+  padding: 0 48px;
   align-items: center;
+}
+
+.daily {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
 }
 
 .forecast > * {
