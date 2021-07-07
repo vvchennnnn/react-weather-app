@@ -47,7 +47,7 @@ class Forecast extends React.Component {
       <div className={styles.forecast}>
         <h2 className={styles.header}>Forecast</h2>
         <div className={styles.daily}>
-          {data.daily.map(({ dt, temp: {day}, weather: [{main, icon}]}) => 
+          {data.daily.slice(0, 5).map(({ dt, temp: {day}, weather: [{main, icon}]}) => 
             <Weather
               temperature = {Math.round(day)}
               weather = {{description: main, icon}}
